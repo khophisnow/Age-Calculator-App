@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: hsl(0, 0%, 94%);
+color: hsl(0, 0%, 8%);
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 32px;
+font-family: 'Poppins', sans-serif;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+/*--------------------------------------------------------------
+# DESKTOP VERSION
+--------------------------------------------------------------*/
+
+@media (min-width: 800px) and (max-width: 1440px) {
+    main div.card{
+    background-color: hsl(0, 0%, 100%);
+    width: 700px;
+    height: auto;
+    padding: 25px 35px;
+    border-radius: 20px 20px 180px 20px;
+}
+main div.card div.card-input{
+    color: hsl(0, 1%, 44%);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 22% 22% 22%;
+    row-gap: 2px;
+    column-gap: 25px;
+    padding: 10px;
+}
+
+main div.card div.card-input label{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+main div.card div.card-input .grid-container input{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-size: 25px;
+    font-weight: 800;
+    
+}
+
+main div.card div.card-input .grid-container input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+main div.card div.card-input .grid-container input:hover{
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+main div.card div.card-input .grid-container .item3{
+    width: 100%;
+    font-size: 11px;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+
+
+main div.card div.card-divider{
+    display: flex;
+    align-items: center;
+    height: 53px;
+    padding: 0 13px;
+}
+main div.card div.card-divider hr#firsthr{
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+main div.card div.card-divider hr#secondhr{
+    display: none;
+}
+main div.card div.card-divider svg{
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    display: flex;
+    padding: 20px;  
+    stroke-width: 2;
+}
+main div.card div.card-divider svg:hover{
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+
+main div.card div.card-results{
+    font-size: 80px;
+    font-weight: 800;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+main div.card div.card-results p#currentYear,p#currentMonth{
+    margin-bottom: -30px;
+}
+
+main div.card div.card-results p span{
+    color: hsl(259, 100%, 65%);
+}
+
+footer .attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background:linear-gradient(hsl(285, 100%, 65%),hsl(259, 100%, 65%));
+    padding: 10px 15px;
+    border-radius: 20px 0;
+}
+}
+
+
+/*--------------------------------------------------------------
+# TABLET VERSION
+--------------------------------------------------------------*/
+
+@media (min-width:375px) and  (max-width: 800px) {
+    main div.card{
+        background-color: hsl(0, 0%, 100%);
+        width: 500PX;
+        height: auto;
+        padding: 10px 20px;
+        border-radius: 20px 20px 120px 20px;
+    }
+    main div.card div.card-input{
+        color: hsl(0, 1%, 44%);
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 22% 22% 22%;
+        row-gap: 2px;
+        column-gap: 25px;
+        padding: 10px;
+    }
+    
+    main div.card div.card-input label{
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+   
+    main div.card div.card-input .grid-container input{
+        width: 100%;
+        padding: 8px 10px;
+        border-radius: 5px;
+        border: 1px solid hsl(0, 0%, 86%);
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    main div.card div.card-input .grid-container input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    main div.card div.card-input .grid-container input:hover{
+        border: 1px solid hsl(259, 100%, 65%);
+    }
+    
+    main div.card div.card-input .grid-container .item3{
+        font-size: 10px;
+        font-style: italic;
+        color: hsl(0, 100%, 67%);
+    }
+    
+    main div.card div.card-divider{
+        display: flex;
+        align-items: center;
+        height: 53px;
+        padding: 0 13px;
+    }
+    main div.card div.card-divider hr#firsthr{
+        width: 100%;
+        border: 1px solid hsl(0, 0%, 86%);
+    }
+    main div.card div.card-divider hr#secondhr{
+        display: none;
+    }
+    main div.card div.card-divider svg{
+        background-color: hsl(259, 100%, 65%);
+        border-radius: 50%;
+        display: flex;
+        padding: 20px;  
+        stroke-width: 3;
+    }
+
+    main div.card div.card-divider svg:hover{
+        background-color: hsl(0, 0%, 8%);
+        cursor: pointer;
+    }
+    
+    main div.card div.card-results{
+        font-size: 75px;
+        font-weight: 800;
+        font-style: italic;
+        margin-top: -10px;
+    }
+    
+    main div.card div.card-results p#currentYear,p#currentMonth{
+        margin-bottom: -25px;
+    }
+    
+    main div.card div.card-results p span{
+        color: hsl(259, 100%, 65%);
+    }
+
+    footer .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        background:linear-gradient(hsl(285, 100%, 65%),hsl(259, 100%, 65%));
+        padding: 5px 10px;
+        border-radius: 20px 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# MOBILE VERSION
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 475px) {
+    main div.card{
+        background-color: hsl(0, 0%, 100%);
+        width: 330px;
+        height: auto;
+        padding: 20px 20px;
+        border-radius: 20px 20px 100px 20px;
+    }
+    main div.card div.card-input{
+        color: hsl(0, 1%, 44%);
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 2px;
+        column-gap: 25px;
+        padding: 5px;
+    }
+    
+    main div.card div.card-input label{
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+    
+    main div.card div.card-input .grid-container input{
+        width: 100%;
+        padding: 8px 10px;
+        border-radius: 5px;
+        border: 1px solid hsl(0, 0%, 86%);
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    main div.card div.card-input .grid-container input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    main div.card div.card-input .grid-container input:hover{
+        border: 1px solid hsl(259, 100%, 65%);
+    }
+    
+    main div.card div.card-input .grid-container .item3{
+        font-size: 8px;
+        font-style: italic;
+        color: hsl(0, 100%, 67%);
+    }
+
+    
+    main div.card div.card-divider{
+        display: flex;
+        align-items: center;
+        height: 100px;
+        padding: 0 13px;
+    }
+    main div.card div.card-divider hr#firsthr{
+        width: 100%;
+        border: 1px solid hsl(0, 0%, 86%);
+    }
+    main div.card div.card-divider hr#secondhr{
+        display: block;
+    }
+     main div.card div.card-divider hr#firsthr,hr#secondhr{
+        width: 50%;
+        border: 1px solid hsl(0, 0%, 86%);
+    }
+    main div.card div.card-divider svg{
+        background-color: hsl(259, 100%, 65%);
+        border-radius: 50%;
+        text-align: center;
+        padding: 16px;
+        width: 65px;
+        height: 65px;
+        stroke-width: 4;
+    }
+
+    main div.card div.card-divider svg:hover{
+        background-color: hsl(0, 0%, 8%);
+        cursor: pointer;
+    }
+    
+    main div.card div.card-results{
+        font-size: 50px;
+        font-weight: 800;
+        font-style: italic;
+        margin-bottom: 15px;
+    }
+    
+    main div.card div.card-results p span{
+        color: hsl(259, 100%, 65%);
+    }
+
+    footer .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        background:linear-gradient(hsl(285, 100%, 65%),hsl(259, 100%, 65%));
+        padding: 5px 10px;
+        border-radius: 20px 0;
+    }
+}
+
+footer .attribution:hover{
+    background:linear-gradient(to bottom left, hsl(259, 100%, 65%),hsl(285, 100%, 65%));
+}
+footer .attribution  .coder a {
+    color: hsl(0, 0%, 94%); 
+}
+footer .attribution  .coder a.icon {
+    color: hsl(0, 0%, 8%); 
+    font-size: 20px;
+}
+footer .attribution  .coder a:hover{
+    font-size: 105%;
+}

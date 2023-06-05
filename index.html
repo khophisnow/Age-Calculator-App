@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <!-- css link  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- JavaScript link  -->
+  <script src="assets/js/index.js"></script>
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+
+  <main>
+      <div class="card">
+        <div class="card-input">
+          <div class="grid-container">
+              <div class="item1"><label for="Day" id="label1">Day</label></div>
+              <div class="item1"><label for="Month" id="label2">Month</label></div>
+              <div class="item1"><label for="Year" id="label3">Year</label></div>
+              <div class="item2"><input type="number" placeholder="DD" id="inputDay"></div>
+              <div class="item2"><input type="number" placeholder="MM" id="inputMonth"></div>
+              <div class="item2"><input type="number" placeholder="YYYY" id="inputYear"></div>
+              <div class="item3"><p id="inputDayErr"></p></div>
+              <div class="item3"><p id="inputMonthErr"></p></div>
+              <div class="item3"><p id="inputYearErr"></p></div>
+          </div>
+        </div>
+        <div class="card-divider">
+          <hr id="firsthr"><span onclick="ageCalculate()"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 46 44"><g fill="none" stroke="hsl(0, 0%, 94%)" stroke-width=""><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></span><hr id="secondhr">
+        </div>
+        <div class="card-results">
+          <p id="currentYear"><span id="years">- -</span> years</p>
+          <p id="currentMonth"><span id="months">- -</span> months</p>
+          <p id="currentDays"><span id="days">- -</span> days</p>
+        </div>
+      </div>
+  </main>
+
+
+
+  <footer>
+     <div class="attribution">
+       <div class="challenge">
+         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      </div> 
+      <div class="coder">
+        Coded by <a href="https://github.com/khophisnow">Somuah Julius Mcbraham Paapa-Boateng</a>.
+        <i class="fa-brands fa-github fa-beat-fade"></i>
+      </div>
+      </div>
+  </footer>
+ 
+</body>
+</html>
