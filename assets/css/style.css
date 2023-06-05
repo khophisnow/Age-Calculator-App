@@ -26,7 +26,7 @@ font-family: 'Poppins', sans-serif;
 # DESKTOP VERSION
 --------------------------------------------------------------*/
 
-@media (min-width: 800px) and (max-width: 1440px) {
+@media (min-width: 800px){
     main div.card{
     background-color: hsl(0, 0%, 100%);
     width: 700px;
